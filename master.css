@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+}
+
+body > * {
+  padding: 10px;
+  margin: 10px;
+}
+
+ul {
+  width: 50%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+}
+
+.elLista::before{
+  content: ' \2043';
+}
+
+.edit,
+.done{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0 10px;
+  float: right;
+  background-color: #ffff;
+  cursor: pointer;
+}
+
+.container{
+  height: 70vh;
+  overflow-y: scroll;
+  background-image: url("https://addons-media.operacdn.com/media/CACHE/images/themes/25/37025/1.0-rev1/images/3b245e8f-9b75-434f-92e8-a10de1d5ef0e/1185b4f35a9a79f6f4d4ed01dfd8cd09.jpg");
+  background-position: center;
+}
+
+ul li{
+  width:100%;
+  margin-top: 20px;
+}
+
+#toDoList{
+}
